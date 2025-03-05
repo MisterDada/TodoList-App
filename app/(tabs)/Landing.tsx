@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
   loginButton: {
     color: "white",
     fontSize: 20,
-    backgroundColor: "black",
+    backgroundColor: "rgb(9, 121, 105)",
     padding: 10,
     borderRadius: 10,
     height: 50,
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     width: 150,
   },
   registerButtonText: {
-    color: "black",
+    color: "rgb(9, 121, 105)",
     textAlign: "center",
     fontSize: 20,
   },

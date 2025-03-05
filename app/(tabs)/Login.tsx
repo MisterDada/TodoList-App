@@ -12,7 +12,6 @@ import React from "react";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
 
 
 
@@ -24,8 +23,8 @@ const Login = () => {
         <Text style={{ fontSize: 30, fontWeight: 700, marginBottom: 5 }}>
           Login
         </Text>
-        <Text style={{ marginBottom: 15, fontSize: 20, fontWeight: 400 }}>
-          Welcome back! Please enter details
+        <Text style={{ marginBottom: 15, fontSize: 20, fontWeight: 400}}>
+          Welcome back! Enter your details
         </Text>
         <TouchableWithoutFeedback>
           <View>
