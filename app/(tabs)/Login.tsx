@@ -6,16 +6,13 @@ import {
   TextInput,
   TouchableOpacity,
 } from "react-native";
+import { NavigationProp } from "@react-navigation/native";
 import { useState } from "react";
 import React from "react";
 
-const Login = () => {
+const Login = ({ navigation }: { navigation: NavigationProp<any> }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
-
-
-
 
   return (
     <View style={styles.container}>
@@ -23,7 +20,7 @@ const Login = () => {
         <Text style={{ fontSize: 30, fontWeight: 700, marginBottom: 5 }}>
           Login
         </Text>
-        <Text style={{ marginBottom: 15, fontSize: 20, fontWeight: 400}}>
+        <Text style={{ marginBottom: 15, fontSize: 20, fontWeight: 400 }}>
           Welcome back! Enter your details
         </Text>
         <TouchableWithoutFeedback>
@@ -87,7 +84,7 @@ const Login = () => {
       </View>
 
       <View style={{ alignItems: "center" }}>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate("Register")}>
           <Text style={{ fontSize: 18, color: "rgb(9, 121, 105)" }}>
             Don't have an account? Register
           </Text>
